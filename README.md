@@ -101,7 +101,6 @@ project/ <br>
 ### Additional Files
 │── Presentation Towards Early Detection.ppt <br>
 │── blood_markers_top_results.xlsx (thresholds for top blood-based biomarkers)<br>
-│── Video Introduction PD.mp4 (by Priyanka Gowd Mitta, M.D)  <br>
 
 ### Example Biomarker Format
 PatientID,A2MG,3-Hydroxykynurenine,LYSC,CatD,… <br>
@@ -113,7 +112,7 @@ If you use this tool in academic work, please cite: <br>
 Jaylani, J. (2025). Threshold-Based Biomarker Classification for Early Parkinson’s Disease Detection.<br>
 Presented at the 2025 Center for Analytics Symposium, Sacred Heart University.<br>
 <br>
-#### Introductory Video by Priyanka Gowd Mitta, M.D
+
 
 ### Contact
 For questions, collaboration, or feedback:<br>
