@@ -101,7 +101,7 @@ project/ <br>
 ### Additional Files
 │── Presentation Towards Early Detection.ppt <br>
 │── blood_markers_top_results.xlsx (thresholds for top blood-based biomarkers)<br>
-│── Video Introduction.mp4 (by Priyanka Gowd Mitta, M.D)  <br>
+│── Video Introduction PD.mp4 (by Priyanka Gowd Mitta, M.D)  <br>
 
 ### Example Biomarker Format
 PatientID,A2MG,3-Hydroxykynurenine,LYSC,CatD,… <br>
