@@ -1,5 +1,8 @@
 streamlit
 pandas
-matplotlib
 numpy
-pathlib
+plotly
+matplotlib
+joblib
+xgboost
+scikit-learn
