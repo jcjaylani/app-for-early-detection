@@ -160,6 +160,18 @@ th["Threshold"] = th["Threshold"].apply(safe_float)
 cal_a = st.number_input("Calibration slope (a)", value=1.0)
 cal_b = st.number_input("Calibration intercept (b)", value=0.0)
 
+
+# --- Create gauge figure once you compute pd_score ---
+#pd_score = st.session_state.get("pd_score", None)
+
+#if pd_score is not None:
+#    fig = go.Figure(go.Indicator(
+ #       mode="gauge+number",
+  #      value=pd_score,
+   #     gauge={"axis": {"range": [0, 100]}},
+    #))
+    #st.session_state["fig_gauge"] = fig
+    
 # --------------------------------------------------------
 # Clinical Dashboard Layout (Left Panel: Inputs)
 # --------------------------------------------------------
@@ -186,11 +198,11 @@ with left_col:
     st.markdown("</div>", unsafe_allow_html=True)
     
     # PD Gauge Card (shows after calculation)
-    if st.session_state.get("computed", False):
-        st.markdown("<div class='card'>", unsafe_allow_html=True)
-        st.subheader("📈 PD Risk Gauge")
-        st.plotly_chart(st.session_state["fig_gauge"], use_container_width=True)
-        st.markdown("</div>", unsafe_allow_html=True)  # end of card
+   # if st.session_state.get("computed", False):
+    #    st.markdown("<div class='card'>", unsafe_allow_html=True)
+     #   st.subheader("📈 PD Risk Gauge")
+      #  st.plotly_chart(st.session_state["fig_gauge"], use_container_width=True)
+       # st.markdown("</div>", unsafe_allow_html=True)  # end of card
 
 
 # ---------------------------------------------------------
@@ -386,6 +398,7 @@ with right_col:
         )
 
         
+       
         # Save gauge
         st.session_state["fig_gauge"] = fig_gauge
         st.session_state["computed"] = True
