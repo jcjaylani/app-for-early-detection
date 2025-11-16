@@ -160,18 +160,6 @@ th["Threshold"] = th["Threshold"].apply(safe_float)
 cal_a = st.number_input("Calibration slope (a)", value=1.0)
 cal_b = st.number_input("Calibration intercept (b)", value=0.0)
 
-
-# --- Create gauge figure once you compute pd_score ---
-pd_score = st.session_state.get("pd_score", None)
-
-if pd_score is not None:
-    fig = go.Figure(go.Indicator(
-        mode="gauge+number",
-        value=pd_score,
-        gauge={"axis": {"range": [0, 100]}},
-    ))
-    st.session_state["fig_gauge"] = fig
-    
 # --------------------------------------------------------
 # Clinical Dashboard Layout (Left Panel: Inputs)
 # --------------------------------------------------------
